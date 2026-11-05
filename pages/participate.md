@@ -75,6 +75,11 @@ retrain the top-ranked submissions from their `submission.py` (see the
 terms). Keep all the training in `fit`, and write at the top of the file the
 `n_train_subjects` you used and how long training took on which GPU.
 
+The platform installs nothing at submission time: `submission.py` can only
+import the packages of `requirements.txt`, and a solver's benchopt
+`requirements` are ignored. To use another package, open a pull request on
+the challenge repository that adds it to `extra-deps.txt`.
+
 ## The compute
 
 Each submission runs on its own AWS g4dn.2xlarge machine: one NVIDIA T4 GPU
