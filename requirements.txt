@@ -23,3 +23,5 @@ mne
 # The EMG2Pose study downloads from NEMAR through these.
 nemar-py>=0.3.1
 eegdash
+# Dependencies added during the challenge (installed on top of the v1 image).
+-r extra-deps.txt
