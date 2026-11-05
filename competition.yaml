@@ -11,7 +11,7 @@ registration_auto_approve: False
 
 # The image submissions run in: built from tools/Dockerfile, it carries the
 # requirements.txt stack. The benchmark ships in the phase input_data.
-docker_image: tommoral/emg2pose-compet:v1
+docker_image: ghcr.io/x-datascience-datacamp/emg2pose-compet:v1
 
 # Only the leaderboard metrics are exposed.
 enable_detailed_results: False
